@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/form.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="single-row">
+				<ul>
+					<li><a href="index.html">O(Newbie)</a></li>
+					<li><a href="login.html">Sign In</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="main-container">
+			<h2>Contact Us</h2>
+			<h6>Give us suggestions</h6>
+			<div id="error"></div>
+
+			<form id="myForm">
+				<div class="field">
+					<input
+						type="text"
+						placeholder="Name"
+						id="name"
+						pattern="[a-z]{1,15}"
+						title="Username should only contain lowercase letters. e.g. john"
+					/>
+				</div>
+				<div class="field">
+					<input type="text" placeholder="Subject" id="subject" />
+				</div>
+				<div class="field">
+					<input type="text" placeholder="Email" id="email" />
+				</div>
+				<div clas="field">
+					<select
+						name="states"
+						id="arr"
+						placeholder="Optional"
+					></select>
+				</div>
+				<div class="field">
+					<textarea id="content" placeholder="Sound off!"></textarea>
+				</div>
+				<div class="btn">
+					<input type="submit" />
+				</div>
+			</form>
+		</div>
+		<script src="./js/form.js"></script>
+		<script src="./js/validate.js"></script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/form.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="single-row">
+				<ul>
+					<li><a href="index.html">O(Newbie)</a></li>
+					<li><a href="#">Sign In</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="main-container">
+			<h2>log in</h2>
+			<div id="error"></div>
+			<form id="myForm">
+				<div class="field">
+					<input
+						type="text"
+						placeholder="Email"
+						id="email"
+						pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+						title="Invalid email"
+					/>
+				</div>
+				<div class="field">
+					<input
+						type="password"
+						placeholder="password"
+						id="pass"
+						pattern="{6,10}"
+						title="Password is between 6 and 10 characters"
+					/>
+				</div>
+				<div class="btn">
+					<input type="submit" value="login" />
+				</div>
+			</form>
+		</div>
+		<script src="./js/form.js"></script>
+		<script src="./js/validate.js"></script>
+	</body>
+</html>
+//
